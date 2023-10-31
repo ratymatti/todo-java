@@ -26,6 +26,7 @@ public class Main {
                     todoList.addTask(newTask);    
                     break;
                 case 2:
+                    todoList.displayTasks();
                     System.out.print("Enter the index of the task to remove: ");
                     int index = scanner.nextInt();
                     todoList.removeTask(index - 1);

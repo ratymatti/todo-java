@@ -23,8 +23,10 @@ public class TodoList {
             System.out.println("No tasks to display.");
         } else {
             System.out.println("Tasks:");
+            System.out.println();
             for (int i = 0; i < tasks.size(); i++) {
                 System.out.println("Task " + (i + 1) + ":\n" + tasks.get(i));
+                System.out.println();
             }
         }
         
