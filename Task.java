@@ -20,4 +20,13 @@ public class Task {
     public boolean getIsCompleted() {
         return this.isCompleted;
     }
+
+    public void markAsCompleted() {
+        this.isCompleted = true;
+    }
+
+    @Override
+    public String toString() {
+        return "Title: " + title + "\nDescription: " + description + "\nStatus: " + (isCompleted ? "Completed" : "Incomplete");
+    }
 }
