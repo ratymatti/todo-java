@@ -6,11 +6,13 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
 
         while (true) {
+            System.out.println();
             System.out.println("Menu:");
             System.out.println("1. Add a task");
             System.out.println("2. Remove a task");
             System.out.println("3. Display tasks");
             System.out.println("4. Quit");
+            System.out.println();
             System.out.print("Enter your choice: ");
             
             int choice = scanner.nextInt();
@@ -30,6 +32,7 @@ public class Main {
                     System.out.print("Enter the index of the task to remove: ");
                     int index = scanner.nextInt();
                     todoList.removeTask(index - 1);
+                    System.out.println("Removed task number " + index);
                     break;
                 case 3:
                     todoList.displayTasks();
