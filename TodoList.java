@@ -19,8 +19,14 @@ public class TodoList {
     }
 
     public void displayTasks() {
-        for (int i = 0; i < tasks.size(); i++) {
-            System.out.println("Task " + (i + 1) + ":\n" + tasks.get(i));
+        if (tasks.isEmpty()) {
+            System.out.println("No tasks to display.");
+        } else {
+            System.out.println("Tasks:");
+            for (int i = 0; i < tasks.size(); i++) {
+                System.out.println("Task " + (i + 1) + ":\n" + tasks.get(i));
+            }
         }
+        
     }
 }
