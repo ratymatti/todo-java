@@ -12,6 +12,12 @@ public class TodoList {
         tasks.add(task);
     }
 
+    public void markTaskCompleted(int index) {
+        if (index >= 0 && index < tasks.size()) {
+            tasks.get(index).markAsCompleted();
+        }
+    }
+
     public void removeTask(int index) {
         if (index >= 0 && index < tasks.size()) {
             tasks.remove(index);
