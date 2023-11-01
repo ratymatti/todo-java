@@ -27,6 +27,6 @@ public class Task {
 
     @Override
     public String toString() {
-        return "Title: " + title + "\nDescription: " + description + "\nStatus: " + (isCompleted ? "Completed" : "Incomplete");
+        return (isCompleted ? "[x]" : "[ ]") + " Title: " + title + "\nDescription: " + description;
     }
 }
